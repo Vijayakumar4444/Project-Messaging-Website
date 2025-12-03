@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.car-cont {
+  width: 500px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: visible; 
+  transform: translateX(-220px); 
+  z-index: 10;
+   
+}
+.image1{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    margin-top: 15px;
+
+}
+.content{
+    margin-top: 20px;
+    font-family: "Alfa Slab One", serif;
+  font-weight: 100;
+    font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+.content1{
+    font-family: "Alfa Slab One", serif;
+  font-weight: 200;
+    font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+.des{
+    margin-top: 10px;
+    font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+     font-size: 14px;
+  opacity: 0.8;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0.5px
+}
+.des1{
+    margin-top: 20px;
+    font-family: "Alfa Slab One", serif;
+  font-weight: 100;
+     font-size: 14px;
+  opacity: 0.8;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0.5px
+}
+
+
+.carosel {
+  position: relative;
+  width: 360px;
+  height: 300px;
+}
+.sign {
+    margin-top: 10px;
+  padding: 6px 15px;
+  font-size: 12px;
+  border-radius: 7px;
+  background: rgba(0, 255, 200, 0.3);
+  border: 1px solid cyan;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sign:hover {
+  box-shadow: 0 0 10px cyan;
+  background-color: white;
+  color: black;
+}
+
+
+.card {
+ position: absolute;
+  width: 120px;
+  height: 160px;
+  border-radius: 15px;
+
+  background: rgba(0, 0, 0, 0.1); /* semi transparent blue */
+  backdrop-filter: blur(6px); /* subtle glass look */
+
+  border: 2px solid rgba(221, 0, 255, 0.7); /* glowing border base */
+  box-shadow: 0 0 15px rgba(189, 189, 189, 0.1), 
+              0 0 35px rgba(189, 189, 189, 0.1); /* glow effect */
+
+  color: white;
+  font-size: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+
+  opacity: 0.9;
+  transform: scale(0.8);
+  z-index: 1;
+  flex-direction: column; 
+  gap: 8px;
+
+
+
+  
+}
+
+
+.card:nth-child(1) {
+  animation: rotate1 6s infinite;
+}
+.card:nth-child(2) {
+  animation: rotate2 6s infinite;
+}
+.card:nth-child(3) {
+  animation: rotate3 6s infinite;
+}
+
+
+@keyframes rotate1 {
+  0%, 16.66%   { left: 0; top: 10px; opacity: 0.5; transform: scale(0.8); z-index:1; }
+  33.33%, 50%  { left: 175px; top: 0px; opacity: 1; transform: scale(1.2); z-index:2; }
+  66.66%, 83.33% { left: 350px; top: 10px; opacity: 0.5; transform: scale(0.8); z-index:1; }
+  100%         { left: 0; top: 10px; opacity: 0.5; transform: scale(0.8); z-index:1; }
+}
+
+@keyframes rotate2 {
+  0%, 16.66%   { left: 175px; top: 0px; opacity: 1; transform: scale(1.2); z-index:2; }
+  33.33%, 50%  { left: 350px; top: 10px; opacity: 0.5; transform: scale(0.8); z-index:1; }
+  66.66%, 83.33% { left: 0; top: 10px; opacity: 0.5; transform: scale(0.8); z-index:1; }
+  100%         { left: 175px; top: 0px; opacity: 1; transform: scale(1.2); z-index:2; }
+}
+
+@keyframes rotate3 {
+  0%, 16.66%   { left: 350px; top: 10px; opacity: 0.5; transform: scale(0.8); z-index:1; }
+  33.33%, 50%  { left: 0; top: 10px; opacity: 0.5; transform: scale(0.8); z-index:1; }
+  66.66%, 83.33% { left: 175px; top: 0px; opacity: 1; transform: scale(1.2); z-index:2; }
+  100%         { left: 350px; top: 10px; opacity: 0.5; transform: scale(0.8); z-index:1; }
+}
